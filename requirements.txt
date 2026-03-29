@@ -1,5 +1,8 @@
-numpy
 pandas
+numpy
 matplotlib
 scikit-learn
-pypdf
+seaborn
+huggingface-hub
+kaggle
+
