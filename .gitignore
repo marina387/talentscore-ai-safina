@@ -1,26 +1,84 @@
 # Python
-__pycache__/
+
+**pycache**/
 *.py[cod]
+*$py.class
 *.so
+*.egg
 *.egg-info/
+.eggs/
 dist/
 build/
+develop-eggs/
+downloads/
+wheels/
 
-# Envs
+# Virtual environments
+
 .venv/
 venv/
 env/
+ENV/
+
+# IDEs
+
+.idea/
+.vscode/
 
 # Jupyter
+
 .ipynb_checkpoints/
 
+# Logs
+
+*.log
+
 # OS
+
 .DS_Store
 Thumbs.db
 
 # Data
+
 data/*
 !data/.gitkeep
 
+# Model artifacts (ML)
+
+models/
+checkpoints/
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Hugging Face / transformers cache
+
+.cache/
+huggingface/
+hf_cache/
+
+# Kaggle
+
+kaggle.json
+
 # Local secrets
+
 *.env
+.env.*
+
+# Testing / coverage
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Type checkers
+
+.mypy_cache/
+.pyre/
+
+# Packaging / lock files 
+
+poetry.lock
+Pipfile.lock
