@@ -2,10 +2,9 @@
 # Операции с матрицами для ранжирования кандидатов
 
 import numpy as np
-from typing import List, Tuple
 
 
-def create_candidate_matrix(candidates_data: List[List[float]]) -> np.ndarray:
+def create_candidate_matrix(candidates_data: list[list[float]]) -> np.ndarray:
     """
     Создание матрицы кандидатов из списка списков
 
@@ -15,7 +14,7 @@ def create_candidate_matrix(candidates_data: List[List[float]]) -> np.ndarray:
     return np.array(candidates_data)
 
 
-def get_matrix_shape(X: np.ndarray) -> Tuple[int, int]:
+def get_matrix_shape(X: np.ndarray) -> tuple[int, int]:
     """Возвращает размер матрицы (строки, столбцы)"""
     return X.shape
 
@@ -54,7 +53,7 @@ def get_top_candidates(
         X: np.ndarray,
         scores: np.ndarray,
         top_k: int = 5
-) -> Tuple[np.ndarray, np.ndarray]:
+) -> tuple[np.ndarray, np.ndarray]:
     """
     Возвращает топ-K кандидатов и их оценки
     """

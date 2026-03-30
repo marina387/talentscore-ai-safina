@@ -2,7 +2,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import Tuple
 
 
 def create_vector(data: list) -> np.ndarray:
@@ -42,8 +41,8 @@ def cosine_similarity(v1: np.ndarray, v2: np.ndarray) -> float:
 
 
 def plot_vectors(v1: np.ndarray, v2: np.ndarray,
-                 xlim: Tuple[int, int] = (0, 4),
-                 ylim: Tuple[int, int] = (0, 4),
+                 xlim: tuple[int, int] = (0, 4),
+                 ylim: tuple[int, int] = (0, 4),
                  title: str = "Два вектора"):
     """Рисует два вектора как стрелки на плоскости"""
     plt.figure(figsize=(6, 6))

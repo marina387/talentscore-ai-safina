@@ -2,7 +2,6 @@
 # Доверительные интервалы и бутстрэп
 
 import numpy as np
-from typing import List, Tuple
 
 
 def mean(values: list[float]) -> float:
@@ -22,7 +21,7 @@ def std_sample(values: list[float]) -> float:
     return var ** 0.5
 
 
-def ci_mean_normal_approx(values: list[float], confidence: float = 0.95) -> Tuple[float, float]:
+def ci_mean_normal_approx(values: list[float], confidence: float = 0.95) -> tuple[float, float]:
     """
     Приближённый доверительный интервал для среднего:
     mean ± z * (std / sqrt(n))
@@ -50,7 +49,7 @@ def bootstrap_ci_mean(
         n_bootstrap: int = 1000,
         confidence: float = 0.95,
         seed: int = 42
-) -> Tuple[float, float]:
+) -> tuple[float, float]:
     """
     Bootstrap доверительный интервал для среднего
 
